@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template -->
     <link href="./css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="./css/bpv-regis.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -43,25 +44,27 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">BPV-regis</a>
+          <a class="navbar-brand" href="./index.php?content=home">BPV-regis</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="./index.php?content=home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TO DO<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
+                <li><a href="./index.php?content=task">wo-22-02-2017</a></li>
+                <li role="separator" class="divider"></li>
                 <li><a href="#">Another action</a></li>
                 <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
+                
                 <li class="dropdown-header">Nav header</li>
                 <li><a href="#">Separated link</a></li>
                 <li><a href="#">One more separated link</a></li>
               </ul>
             </li>
+            <li><a href="./index.php?content=register">Registratie</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -69,11 +72,15 @@
 
     <!-- Begin page content -->
     <div class="container">
-      <div class="page-header">
-        <h1>Sticky footer with fixed navbar</h1>
-      </div>
-      <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body &gt; .container</code>.</p>
-      <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>
+      <?php 
+          if (isset($_GET["content"]))
+          {
+            include($_GET["content"].".php"); 
+          }
+          else {
+            include("home.php");
+          }
+      ?>
     </div>
 
     <footer class="footer">
@@ -87,9 +94,10 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="./bootstrap-3.3.7/docs/assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="./bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./bootstrap-3.3.7/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="./js/bpv-regis.js"></script>
   </body>
 </html>
