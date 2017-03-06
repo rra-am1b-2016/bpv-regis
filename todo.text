@@ -1,0 +1,7 @@
+1. Maak een id voor je button
+2. Maak een click event voor deze button
+3. Maak een httprequest object voor het asynchroon versturen van het id
+4. Maak een register-data.php bestand waarin gechecked wordt of het id al bestaat.
+5. Als het id bestaat dan moet dit worden teruggekoppeld, bestaat het niet dan moet
+   er een mail verstuurt worden met een activatie link.
+6. Door het klikken op de link wordt er een wachtwoord kiespagina aangeboden.
