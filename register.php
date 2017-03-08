@@ -1,6 +1,6 @@
 <div class="page-header">
         <h1>Registreren</h1>
-      </div>
+</div>
 <p class="lead">
 <form class="form-horizontal">
    <div class="form-group">

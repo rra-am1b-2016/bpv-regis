@@ -24,14 +24,14 @@
                         if ($result)
                         {
                               echo "Uw account is geactiveerd en uw password gewijzigd.";
-                              header("refresh: 4; url=index.php?content=login_form&email=".$record["email"]);
+                              header("refresh: 4; url=index.php?content=login_form&email=".$record["id"]."@student.mboutrecht.nl");
                         }
                   }
                   else
                   {
                         echo "De twee ingevoerde wachtwoorden komen niet overeen. Probeer het nog een keer.<br>";
                         echo "U wordt doorgestuurd naar de betreffende pagina";
-                        header("refresh: 4; url=index.php?content=activate&id=".$_POST["id"]."&pw=".$_POST["pw"]);
+                        header("refresh: 4; url=index.php?content=register-activate&id=".$_POST["id"]."&pw=".$_POST["pw"]);
                   }
               
          }
@@ -42,7 +42,7 @@
                if ($record["activate"] )
                {
                      echo "Uw account is al geactiveerd. U wordt nu doorgestuurd naar de homepage.";
-                     header("refresh: 4; url=index.php?content=login_form&email=".$record["email"]);
+                     header("refresh: 4; url=index.php?content=login_form&email=".$record["id"]."@student.mboutrecht.nl");
                }
                else
                {
@@ -54,25 +54,38 @@
    else
    {
 ?>
-<h2>Wijzig uw wachtwoord</h2>
-<form action="./index.php?content=register-activate" method="post">
-   <table>
-      <tr>
-         <td>Wachtwoord:</td>
-         <td><input type="password" name="password" required></td>
-      </tr>
-      <tr>
-         <td>Tik opnieuw in:</td>
-         <td><input type="password" name="verification_password" required></td>
-      </tr>
-      <tr>
-         <td></td>
-         <td><input type="submit" name="submit" value="wijzig!"></td>
-      </tr>
-      <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
-      <input type="hidden" name="pw" value="<?php echo $_GET["pw"]; ?>">
-   </table>
+
+        
+<div class="page-header">
+   <h1>Wijzig uw wachtwoord</h1>
+</div>
+<p class="lead">
+<form action="./index.php?content=register-activate" method="post" class="form-horizontal">
+   <div class="form-group">
+      <label for="password" class="col-sm-2 control-label">Wachtwoord: </label>
+      <div class="col-sm-5">
+         <input type="password" name="password" id="password" required class="form-control" placeholder="wachtwoord">
+      </div>
+      <div class="col-sm-5">
+      </div>
+   </div>
+   <div class="form-group">
+      <label for="verification_password" class="col-sm-2 control-label">Tik opnieuw in: </label>
+      <div class="col-sm-5">
+         <input type="password" name="verification_password" id="verification_password" required class="form-control" placeholder="wachtwoord">
+      </div>
+      <div class="col-sm-5">
+      </div>
+   </div>
+   <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+         <button type="submit" class="btn btn-default" name="submit" value="wijzig">Wijzig wachtwoord</button>
+         <input type="hidden" name="id" value="<?php echo $_GET["id"]; ?>">
+         <input type="hidden" name="pw" value="<?php echo $_GET["pw"]; ?>">
+      </div>
+   </div>
 </form>
+</p>
 <?php
    }
 ?>
