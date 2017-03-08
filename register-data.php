@@ -32,6 +32,10 @@
       
       // Maak er een sha1 hash van (32 bits)
       $tempPassword = sha1($tempPassword);
+
+      $query = "UPDATE `users` SET `password` = '" . $tempPassword . "' WHERE `id` = " . $id;
+
+      mysqli_query($conn, $query);
        
       //echo "Dit is de waarde van result: ".$result;
       $to = $id."@student.mboutrecht.nl";
@@ -69,5 +73,6 @@
 
       mail($to, $subject, $message, $headers);
       }
+   }
 ?>
 
