@@ -66,19 +66,8 @@
       $headers .= "Cc: admin@gmail.com, root@gmail.com"."\r\n";
       $headers .= "Bcc: belastingdienst@gmail.com"."\r\n";
       $headers .= "From: admin@gmail.com";
+
       mail($to, $subject, $message, $headers);
-      // Boodschap dat het registratieproces is voltooid
-      echo "Er wordt een registratiemail gestuurd naar het door u opgegeven mailadres.";
-      echo "Na het klikken op de activatielink is het registratieproces voltooid";
-      //header("refresh:4; url=http://localhost/2016-2017/am1b/Blok%203/Web/bpv-regis/index.php?content=home");
-      exit();
-      } else  {
-         echo "Dit studentnummer is niet bekent in de database";
-         header("refresh:4; url=./index.php?content=register_form");
-      }
-      } else  {
-         echo "Er is geen Get variable meegegeven";
-         header("refresh:4; url=./index.php?content=register_form");
       }
 ?>
 
