@@ -70,7 +70,7 @@
       // Boodschap dat het registratieproces is voltooid
       echo "Er wordt een registratiemail gestuurd naar het door u opgegeven mailadres.";
       echo "Na het klikken op de activatielink is het registratieproces voltooid";
-      header("refresh:4; url=http://localhost/2016-2017/am1b/Blok%203/Web/bpv-regis/index.php?content=home");
+      //header("refresh:4; url=http://localhost/2016-2017/am1b/Blok%203/Web/bpv-regis/index.php?content=home");
       exit();
       } else  {
          echo "Dit studentnummer is niet bekent in de database";

@@ -99,6 +99,6 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./bootstrap-3.3.7/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
     <script src="./js/bpv-regis.js"></script>
-    <script src="./js/register.js"></script>
+    <?php include("js-selector.php"); ?>
   </body>
 </html>
