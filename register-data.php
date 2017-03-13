@@ -1,7 +1,22 @@
+
+
 <?php
    include("connect_db.php");
 
+   /*
+   if (mail("adruijter@gmail.com", "Wat is dit","Halkjdfs")){
+       //http_response_code(200);
+       echo "Succes";
+      // header("Location: www.bpv-regis.nl?content=login-form");
+   } else {
+         //http_response_code(500);
+         echo "Mailen niet gelukt";
+   }
 
+  exit();
+
+  */
+  
    if (isset($_GET["id"] )) {
 
       $id = $_GET["id"];
@@ -71,6 +86,8 @@
             $headers .= "From: admin@gmail.com";
 
             mail($to, $subject, $message, $headers);
+            //header("Location: http://localhost/2016-2017/am1b/Blok%203/Web/bpv-regis/index.php?content=register");
+            echo "succes";
       } else {
             echo "al geactiveerd";
       }

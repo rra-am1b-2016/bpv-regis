@@ -2,7 +2,7 @@
         <h1>Registreren</h1>
 </div>
 <p class="lead">
-<form class="form-horizontal">
+<form class="form-horizontal" action="www.bpv-register.nl/register-data.php" method="get">
    <div class="form-group">
       <label for="stdnumber" class="col-sm-2 control-label">Studentnummer: </label>
       <div class="col-sm-5">
@@ -13,7 +13,7 @@
    </div>
    <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
-         <button type="submit" class="btn btn-default" id="btn-register">Sign in</button>
+         <button class="btn btn-default" id="btn-register">Sign in</button>
       </div>
    </div>
 </form>
