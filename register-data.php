@@ -3,7 +3,7 @@
 <?php
    include("connect_db.php");
   
-   if (isset($_GET["id"] )) {
+   if (isset($_GET["id"] ) && $_GET["id"] != "") {
 
       $id = $_GET["id"];
       // Selecteer de user record op basis van het id
@@ -76,7 +76,11 @@
       } else {
             echo "al geactiveerd";
       }
+   } else {
+            echo "studentnummer_error";
    }
-   }
+} else {
+      echo "id_error";
+}
 ?>
 

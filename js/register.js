@@ -18,7 +18,17 @@ $(document).ready(function () {
             setTimeout(function () {
              window.location.href = "index.php?content=login_form";
            }, 4000);    
-         }
+         } else if (xmlhttp.responseText.trim() == "studentnummer_error") {
+           document.getElementById("studentnumber_error").style.display = "block"; 
+            setTimeout(function () {
+             window.location.href = "index.php?content=register";
+           }, 4000);    
+         } else if (xmlhttp.responseText.trim() == "id_error") {
+           document.getElementById("id_error").style.display = "block"; 
+            setTimeout(function () {
+             window.location.href = "index.php?content=register";
+           }, 4000);    
+         } 
       }
    }
 

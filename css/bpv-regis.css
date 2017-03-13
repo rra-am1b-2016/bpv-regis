@@ -10,3 +10,11 @@
 #is_now_registered {
    display: none;
 }
+
+#studentnumber_error {
+   display: none;
+}
+
+#id_error {
+   display: none;
+}
