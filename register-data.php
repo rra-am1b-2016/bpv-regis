@@ -2,20 +2,6 @@
 
 <?php
    include("connect_db.php");
-
-   /*
-   if (mail("adruijter@gmail.com", "Wat is dit","Halkjdfs")){
-       //http_response_code(200);
-       echo "Succes";
-      // header("Location: www.bpv-regis.nl?content=login-form");
-   } else {
-         //http_response_code(500);
-         echo "Mailen niet gelukt";
-   }
-
-  exit();
-
-  */
   
    if (isset($_GET["id"] )) {
 
@@ -75,7 +61,7 @@
                                     <p>Geachte mevrouw/heer ".$record["firstname"]." ".$record["infix"]." ".$record["lastname"]."</p>".
                                     "Bedankt voor het registreren. Om het registratieproces<br>". 
                                     "te voltooien moet u op de onderstaande link klikken<br>". 
-                                    "<a href='http://localhost/2016-2017/am1b/Blok%203/Web/bpv-regis/index.php?content=register-activate&id=".$id."&pw=".$tempPassword."'>registratielink</a> <br>".
+                                    "<a href='http://www.bpv-regis.nl/index.php?content=register-activate&id=".$id."&pw=".$tempPassword."'>registratielink</a> <br>".
                                     "<p>Met vriendelijke groet,</p>".
                                     "Administrator                        
                               </body>
@@ -86,7 +72,6 @@
             $headers .= "From: admin@gmail.com";
 
             mail($to, $subject, $message, $headers);
-            //header("Location: http://localhost/2016-2017/am1b/Blok%203/Web/bpv-regis/index.php?content=register");
             echo "succes";
       } else {
             echo "al geactiveerd";

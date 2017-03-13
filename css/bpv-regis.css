@@ -2,3 +2,11 @@
 {
    border: 0px solid black;
 }
+
+#is_already_registered {
+   display: none;
+}
+
+#is_now_registered {
+   display: none;
+}

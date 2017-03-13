@@ -4,15 +4,26 @@ $(document).ready(function () {
    xmlhttp.onreadystatechange = function ()
    {
      alert(xmlhttp.status + " | " + xmlhttp.readyState);
-     alert(xmlhttp.HEADERS_RECEIVED);
       if ( ((xmlhttp.status == 200)) && xmlhttp.readyState == 4) {
-         alert("response tekst: " + xmlhttp.responseText);
+        alert(xmlhttp.responseText.trim());
+         if ( xmlhttp.responseText.trim() == "succes") {
+           document.getElementById("is_now_registered").style.display = "block";
+
+           setTimeout(function () {
+             window.location.href = "index.php?content=login_form";
+           }, 4000);
+
+         } else if (xmlhttp.responseText.trim() == "al geactiveerd") {
+           document.getElementById("is_already_registered").style.display = "block"; 
+            setTimeout(function () {
+             window.location.href = "index.php?content=login_form";
+           }, 4000);    
+         }
       }
    }
 
    document.getElementById("btn-register").onclick = function () {
       var stdnumber = document.getElementById("stdnumber").value;
-      //var url = "www.bpv-regis.nl/register-data.php?id=" + stdnumber;
       var url = "register-data.php?id=" + stdnumber;
       console.log(url);
       xmlhttp.open("GET", url, true);

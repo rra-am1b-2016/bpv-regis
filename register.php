@@ -2,7 +2,7 @@
         <h1>Registreren</h1>
 </div>
 <p class="lead">
-<form class="form-horizontal" action="www.bpv-register.nl/register-data.php" method="get">
+<form class="form-horizontal">
    <div class="form-group">
       <label for="stdnumber" class="col-sm-2 control-label">Studentnummer: </label>
       <div class="col-sm-5">
@@ -18,4 +18,6 @@
    </div>
 </form>
 </p>
+<div class="alert alert-success" role="alert" id="is_now_registered">Uw bent succesvol geregistreerd. Klik <a href="./index.php?content=login_form" class="alert-link">hier</a> om in te loggen</div>
+<div class="alert alert-danger" role="alert" id="is_already_registered">Uw account is al geactiveerd. Klik <a href="./index.php?content=login_form" class="alert-link">hier</a> om in te loggen</div>
 
