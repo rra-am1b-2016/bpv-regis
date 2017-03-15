@@ -1,7 +1,5 @@
 <?php
    if (isset($_GET["content"])) {
-      if ($_GET["content"] == "register") {
-         echo "<script src='./js/register.js'></script>";
-      }
+      echo "<script src='./js/" . $_GET["content"] . ".js'></script>";
    }
 ?>
