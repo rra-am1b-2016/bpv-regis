@@ -19,6 +19,11 @@
 
     <!-- Custom styles for this template -->
     <link href="./css/sticky-footer-navbar.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link href="./css/signin.css" rel="stylesheet">
+
+    <!-- Custom styles RRA -->
     <link href="./css/bpv-regis.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
