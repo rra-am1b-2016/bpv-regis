@@ -6,7 +6,7 @@
    $sql = "SELECT * 
            FROM `users` 
            WHERE `id` = '".$_GET["id"]."'
-           AND   `password` = '".sha1($_GET["password"])."'";
+           AND   `password` = '".sha1($_GET["pw"])."'";
    //echo $sql; exit();
    // Vuur de query af op de database
    $result = mysqli_query($conn, $sql);
@@ -19,6 +19,8 @@
       
       $_SESSION["id"] = $record["id"];
       $_SESSION["userrole"] = $record["userrole"];
+      echo $_SESSION["userrole"];
+      /*
       switch($record["userrole"])
       {
          case 'student':
@@ -34,6 +36,7 @@
             header("Location: index.php?content=home");
             break;
       }
+      */
    }
    else
    {
