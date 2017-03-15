@@ -1,11 +1,11 @@
 <form class="form-signin">
         <h2 class="form-signin-heading">Please sign in</h2>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" 
-               placeholder="Email address" required autofocus 
+        <label for="inputStdNumber" class="sr-only">Student nummer</label>
+        <input type="number" id="inputStdNumber" class="form-control" 
+               placeholder="Student nummer" required autofocus 
                value="<?php
-                         if (isset($_GET['email'])) {
-                            echo $_GET['email']; 
+                         if (isset($_GET['id'])) {
+                            echo $_GET['id']; 
                          } 
                       ?>
                       ">
@@ -16,5 +16,5 @@
             <input type="checkbox" value="remember-me"> Remember me
           </label>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <button class="btn btn-lg btn-primary btn-block" id="btn_signIn">Sign in</button>
 </form>

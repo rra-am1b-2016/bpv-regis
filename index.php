@@ -78,6 +78,7 @@
     <!-- Begin page content -->
     <div class="container">
       <?php 
+          session_start();
           if (isset($_GET["content"]))
           {
             include($_GET["content"].".php"); 

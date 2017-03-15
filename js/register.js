@@ -3,9 +3,9 @@ $(document).ready(function () {
 
    xmlhttp.onreadystatechange = function ()
    {
-     alert(xmlhttp.status + " | " + xmlhttp.readyState);
+     //alert(xmlhttp.status + " | " + xmlhttp.readyState);
       if ( ((xmlhttp.status == 200)) && xmlhttp.readyState == 4) {
-        alert(xmlhttp.responseText.trim());
+        //alert(xmlhttp.responseText.trim());
          if ( xmlhttp.responseText.trim() == "succes") {
            document.getElementById("is_now_registered").style.display = "block";
 

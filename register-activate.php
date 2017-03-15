@@ -24,7 +24,7 @@
                         if ($result)
                         {
                               echo "Uw account is geactiveerd en uw password gewijzigd.";
-                              header("refresh: 4; url=index.php?content=login_form&email=".$record["id"]."@student.mboutrecht.nl");
+                              header("refresh: 4; url=index.php?content=login_form&id=".$record["id"]);
                         }
                   }
                   else
