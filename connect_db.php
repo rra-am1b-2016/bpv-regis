@@ -1,4 +1,5 @@
 <?php
+   // Gebruikersnaam mysql server
    $username = "root";
    $password = "";
    $servername= "localhost";
