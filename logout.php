@@ -4,5 +4,7 @@
 
    // vernietig de session 
    session_destroy();
+
+   // Stuur de gebruiker door naar de homepage
    header("Location: index.php?content=home");
 ?>
