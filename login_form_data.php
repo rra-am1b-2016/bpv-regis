@@ -5,7 +5,7 @@
    // Maak een select query op basis van gegeven e-mailadres en wachtwoord. 
    $sql = "SELECT * 
            FROM `users` 
-           WHERE `id` = '".$_GET["id"]."'";
+           WHERE `id` = '".$_POST["id"]."'";
    //echo $sql; exit();
    // Vuur de query af op de database
    $result = mysqli_query($conn, $sql);
@@ -14,38 +14,24 @@
    if ( mysqli_num_rows($result) > 0 )  {
 
       $record = mysqli_fetch_array($result, MYSQLI_ASSOC);
-
-      if ( $record["activate"]) {
-
-        if ( !strcmp($record["password"], sha1($_GET["pw"]))) {
-
-        //var_dump($record);
-        session_start();
-        $_SESSION["id"] = $record["id"];
-        $_SESSION["userrole"] = $record["userrole"];
-        echo $_SESSION["userrole"];
-        /*
-        switch($record["userrole"])
-        {
-                case 'student':
-                header("Location: index.php?content=student_home");
-                break;
-                case 'root':
-                header("Location: index.php?content=root_home");
-                break;
-                case 'administrator':
-                header("Location: index.php?content=administrator_home");
-                break;
-                default:
-                header("Location: index.php?content=home");
-                break;
-        }
-        */
-        } else {
-          echo "error_activate";
-        }
+      if ( !strcmp($record["password"], "")) {
+        echo "error_no_mail_send";
       } else {
-        echo "error_pw";
+        if ( $record["activate"]) {
+
+                if ( !strcmp($record["password"], sha1($_POST["pw"]))) {
+
+                //var_dump($record);
+                session_start();
+                $_SESSION["id"] = $record["id"];
+                $_SESSION["userrole"] = $record["userrole"];
+                echo $_SESSION["userrole"];
+                } else {
+                echo "error_activate";
+                }
+        } else {
+                echo "error_pw";
+        }
       }
    } else {
       echo "error_id";

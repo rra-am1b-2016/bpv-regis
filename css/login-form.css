@@ -1,3 +1,3 @@
-#error_id, #error_pw, #error_activate {
+#error_id, #error_pw, #error_activate, #error_no_mail_send {
    display: none;
 }

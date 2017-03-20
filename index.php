@@ -73,7 +73,10 @@
               </ul>
             </li>
             <li><a href="./index.php?content=register">registreren</a></li>
-            <li><a href="./index.php?content=login_form">inloggen</a></li>
+            <?php 
+              session_start();
+              include("userrole_links.php");
+            ?>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -82,7 +85,6 @@
     <!-- Begin page content -->
     <div class="container">
       <?php 
-          session_start();
           if (isset($_GET["content"]))
           {
             include($_GET["content"].".php"); 

@@ -1,27 +1,13 @@
-<div class="page-header">
-        <h1>Registreren</h1>
-</div>
 <p class="lead">
-<form class="form-horizontal">
-   <div class="form-group">
-      <label for="stdnumber" class="col-sm-2 control-label">Studentnummer: </label>
-      <div class="col-sm-5">
-         <input type="number" class="form-control" id="stdnumber" placeholder="studentnummer">
-      </div>
-      <div class="col-sm-5">
-      </div>
-   </div>
-   <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-10">
-         <button class="btn btn-default" id="btn-register">Sign in</button>
-      </div>
-   </div>
+<form class="form-signin">
+   <h2 class="form-signin-heading">registreren</h2>
+   <label for="inputStdNumber" class="sr-only">Student nummer</label>
+         <input type="text" class="form-control" id="stdnumber" placeholder="studentnummer" autofocus required>
+         <button class="btn btn-lg btn-primary btn-block" id="btn-register">Verstuur</button>
 </form>
 </p>
 <div class="alert alert-success" role="alert" id="is_now_registered">
-        Uw bent succesvol geregistreerd. Klik 
-        <a href="./index.php?content=login_form" class="alert-link">hier</a>
-         om in te loggen
+        U heeft een activatiemail in uw mailbox. Klik op de activatelink om in te loggen
 </div>
 <div class="alert alert-danger" role="alert" id="is_already_registered">Uw account is al geactiveerd. Klik <a href="./index.php?content=login_form" class="alert-link">hier</a> om in te loggen</div>
 <div class="alert alert-warning" role="alert" id="studentnumber_error">
