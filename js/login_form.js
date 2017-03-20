@@ -9,7 +9,7 @@ $(document).ready(function () {
    xhr.onreadystatechange  = function () {
       alert(xhr.status + " | "  + xhr.readyState);
       if ( xhr.status == 200 && xhr.readyState == 4) {
-         //alert(xhr.responseText);
+         alert(xhr.responseText);
          if ( xhr.responseText.trim() == "student") {
             window.location.href = "index.php?content=student_home";
          }

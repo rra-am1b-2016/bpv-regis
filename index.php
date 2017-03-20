@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -69,7 +70,8 @@
                 <li><a href="#">One more separated link</a></li>
               </ul>
             </li>
-            <li><a href="./index.php?content=register">Registratie</a></li>
+            <li><a href="./index.php?content=register">registreren</a></li>
+            <li><a href="./index.php?content=login_form">inloggen</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -78,7 +80,6 @@
     <!-- Begin page content -->
     <div class="container">
       <?php 
-          session_start();
           if (isset($_GET["content"]))
           {
             include($_GET["content"].".php"); 

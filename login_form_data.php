@@ -16,7 +16,7 @@
    {
       $record = mysqli_fetch_array($result, MYSQLI_ASSOC);
       //var_dump($record);
-      
+      session_start();
       $_SESSION["id"] = $record["id"];
       $_SESSION["userrole"] = $record["userrole"];
       echo $_SESSION["userrole"];
@@ -40,8 +40,9 @@
    }
    else
    {
-      echo "Uw email en wachtwoord combinatie is niet bekent in de database.<br>";
-      echo "U wordt doorgestuurd naar de inlogpagina. Probeer het opnieuw";
-      header("Refresh: 4; url=index.php?content=login_form");
+      //echo "Uw email en wachtwoord combinatie is niet bekent in de database.<br>";
+      //echo "U wordt doorgestuurd naar de inlogpagina. Probeer het opnieuw";
+      //header("Refresh: 4; url=index.php?content=login_form");
+      echo "error_id_password";
    }
 ?>
