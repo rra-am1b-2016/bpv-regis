@@ -11,34 +11,43 @@
    $result = mysqli_query($conn, $sql);
    
    // Als het record gevonden is...
-   if ( mysqli_num_rows($result) > 0 )
-   {
+   if ( mysqli_num_rows($result) > 0 )  {
+
       $record = mysqli_fetch_array($result, MYSQLI_ASSOC);
-      //var_dump($record);
-      session_start();
-      $_SESSION["id"] = $record["id"];
-      $_SESSION["userrole"] = $record["userrole"];
-      echo $_SESSION["userrole"];
-      /*
-      switch($record["userrole"])
-      {
-         case 'student':
-            header("Location: index.php?content=student_home");
-            break;
-         case 'root':
-            header("Location: index.php?content=root_home");
-            break;
-         case 'administrator':
-            header("Location: index.php?content=administrator_home");
-            break;
-         default:
-            header("Location: index.php?content=home");
-            break;
+
+      if ( $record["activate"]) {
+
+        if ( !strcmp($record["password"], sha1($_GET["pw"]))) {
+
+        //var_dump($record);
+        session_start();
+        $_SESSION["id"] = $record["id"];
+        $_SESSION["userrole"] = $record["userrole"];
+        echo $_SESSION["userrole"];
+        /*
+        switch($record["userrole"])
+        {
+                case 'student':
+                header("Location: index.php?content=student_home");
+                break;
+                case 'root':
+                header("Location: index.php?content=root_home");
+                break;
+                case 'administrator':
+                header("Location: index.php?content=administrator_home");
+                break;
+                default:
+                header("Location: index.php?content=home");
+                break;
+        }
+        */
+        } else {
+          echo "error_activate";
+        }
+      } else {
+        echo "error_pw";
       }
-      */
-   }
-   else
-   {
+   } else {
       echo "error_id";
    }
 ?>

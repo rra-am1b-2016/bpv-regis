@@ -13,7 +13,17 @@ $(document).ready(function () {
          if ( xhr.responseText.trim() == "student") {
             window.location.href = "index.php?content=student_home";
          } else if (xhr.responseText.trim() == "error_id") {
-            var error_id = document.getElementById("error_id").style.display = "Block";
+            document.getElementById("error_id").style.display = "Block";
+            setTimeout(function () {
+               window.location.href = "index.php?content=login_form";               
+            }, 3000)
+         } else if (xhr.responseText.trim() == "error_pw") {
+            document.getElementById("error_pw").style.display = "Block";
+            setTimeout(function () {
+               window.location.href = "index.php?content=login_form";               
+            }, 3000)
+         } else if (xhr.responseText.trim() == "error_activate") {
+            document.getElementById("error_activate").style.display = "Block";
             setTimeout(function () {
                window.location.href = "index.php?content=login_form";               
             }, 3000)
