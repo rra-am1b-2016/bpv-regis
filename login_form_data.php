@@ -5,8 +5,7 @@
    // Maak een select query op basis van gegeven e-mailadres en wachtwoord. 
    $sql = "SELECT * 
            FROM `users` 
-           WHERE `id` = '".$_GET["id"]."'
-           AND   `password` = '".sha1($_GET["pw"])."'";
+           WHERE `id` = '".$_GET["id"]."'";
    //echo $sql; exit();
    // Vuur de query af op de database
    $result = mysqli_query($conn, $sql);
@@ -40,9 +39,6 @@
    }
    else
    {
-      //echo "Uw email en wachtwoord combinatie is niet bekent in de database.<br>";
-      //echo "U wordt doorgestuurd naar de inlogpagina. Probeer het opnieuw";
-      //header("Refresh: 4; url=index.php?content=login_form");
-      echo "error_id_password";
+      echo "error_id";
    }
 ?>

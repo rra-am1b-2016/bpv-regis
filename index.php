@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,6 +22,9 @@
     
     <!-- Custom styles for this template -->
     <link href="./css/signin.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/login-form.css" rel="stylesheet">
 
     <!-- Custom styles RRA -->
     <link href="./css/bpv-regis.css" rel="stylesheet">
@@ -80,6 +82,7 @@
     <!-- Begin page content -->
     <div class="container">
       <?php 
+          session_start();
           if (isset($_GET["content"]))
           {
             include($_GET["content"].".php"); 

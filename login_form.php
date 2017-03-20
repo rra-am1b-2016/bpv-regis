@@ -12,3 +12,8 @@
         </div>
         <button class="btn btn-lg btn-primary btn-block" id="btn_signIn">Sign in</button>
 </form>
+<div class="alert alert-danger" role="alert" id="error_id">
+U heeft een niet bestaand studentnummer ingevuld. Probeer het opnieuw, 
+  <a href="index.php?content=login_form" class="alert-link">klik</a> hier om direct naar de
+  loginpagina te gaan
+</div>
