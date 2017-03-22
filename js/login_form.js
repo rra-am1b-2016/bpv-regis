@@ -51,6 +51,7 @@ $(document).ready(function () {
                window.location.href = "index.php?content=register";               
                }, 3000)
                break;
+               
          }
          /*
          if ( xhr.responseText.trim() == "student") {
