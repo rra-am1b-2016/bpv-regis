@@ -23,6 +23,9 @@
     <!-- Custom styles for this template -->
     <link href="./css/signin.css" rel="stylesheet">
 
+    <!-- Custom styles for invoer_stagebedrijf.php -->
+    <link href="./css/bpv_form.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="./css/login-form.css" rel="stylesheet">
 
