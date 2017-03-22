@@ -72,7 +72,6 @@
                 <li><a href="#">One more separated link</a></li>
               </ul>
             </li>
-            <li><a href="./index.php?content=register">registreren</a></li>
             <?php 
               session_start();
               include("userrole_links.php");
@@ -97,7 +96,7 @@
 
     <footer class="footer">
       <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
+        <p class="text-muted">AM1B Blok 3 MBO Utrecht 2017</p>
       </div>
     </footer>
 

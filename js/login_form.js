@@ -7,9 +7,9 @@ $(document).ready(function () {
    xhr = new XMLHttpRequest();
 
    xhr.onreadystatechange  = function () {
-      alert(xhr.status + " | "  + xhr.readyState);
+      //alert(xhr.status + " | "  + xhr.readyState);
       if ( xhr.status == 200 && xhr.readyState == 4) {
-         alert(xhr.responseText);
+         //alert(xhr.responseText);
          switch (xhr.responseText.trim())
          {
             case "student":
