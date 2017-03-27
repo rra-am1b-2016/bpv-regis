@@ -23,10 +23,10 @@
     <!-- Custom styles for this template -->
     <link href="./css/signin.css" rel="stylesheet">
 
-    <!-- Custom styles for invoer_stagebedrijf.php -->
+    <!-- Custom styles RRA for invoer_stagebedrijf.php -->
     <link href="./css/bpv_form.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+    <!-- Custom styles RRA for this template -->
     <link href="./css/login-form.css" rel="stylesheet">
 
     <!-- Custom styles RRA -->
@@ -63,8 +63,6 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="./index.php?content=home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TO DO<span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -72,9 +70,10 @@
                 <li role="separator" class="divider"></li>
                 <li><a href="#">Another action</a></li>
                 <li><a href="#">Something else here</a></li>
-                
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
+                <li><a href="#">Separated link</a></li>_
                 <li><a href="#">One more separated link</a></li>
               </ul>
             </li>
@@ -116,6 +115,8 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./bootstrap-3.3.7/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
     <script src="./js/bpv-regis.js"></script>
+    <script src="./js/links.js"></script>
+    
     <?php include("js-selector.php"); ?>
   </body>
 </html>
