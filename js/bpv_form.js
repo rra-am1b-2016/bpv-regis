@@ -3,9 +3,14 @@ $(document).ready(function () {
    var xhr = new XMLHttpRequest();
 
    xhr.onreadystatechange = function () {
-      alert(xhr.status + " | " + xhr.readyState);
+      //alert(xhr.status + " | " + xhr.readyState);
       if ( xhr.status == 200 && xhr.readyState == 4) {
-         alert(xhr.responseText);
+         if ( xhr.responseText === "succes_insert") {
+            document.getElementById("succes_insert").style.display = "block";
+            setTimeout(function () {
+               window.location.href = "index.php?content=home";
+            }, 3000);
+         }
       }
    } 
 
@@ -24,7 +29,7 @@ $(document).ready(function () {
                     "mobileContact" : document.getElementById("mobileContact").value,
                     "streetName" :  document.getElementById("streetName").value,
                     "houseNumber" : document.getElementById("houseNumber").value,
-                    "postcode" : document.getElementById("postalcode").value,
+                    "postalcode" : document.getElementById("postalcode").value,
                     "city" : document.getElementById("city").value,
                     "urlCompany" : document.getElementById("urlCompany").value,
                     "emailContact" : document.getElementById("emailContact").value,

@@ -103,7 +103,10 @@
         
         
         <button class="btn btn-lg btn-primary btn-block" id="btn_bpv_form">Verstuur</button>
+        <div class="alert alert-success" role="alert" id="succes_insert">Het bedrijf is succesvol toegevoegd</div>
+        
 </form>
+
 <div class="alert alert-danger" role="alert" id="error_id">
 U heeft een niet bestaand studentnummer ingevuld. Probeer het opnieuw, 
   <a href="index.php?content=login_form" class="alert-link">klik</a> hier om direct naar de

@@ -79,3 +79,8 @@ body {
    display: inline;
    width: 140px;
 }
+
+.form-bpv div[id="succes_insert"] {
+  display: none;
+  margin-top: 10px;
+}
