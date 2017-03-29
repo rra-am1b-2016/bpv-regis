@@ -21,35 +21,35 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="./images/bird.jpg" alt="bird" width="460" height="345">
+        <img src="./images/doodles/bird.jpg" alt="bird" width="460" height="345">
       </div>
 
       <div class="item">
-        <img src="./images/sesamestreet.jpg" alt="sesamestreet" width="460" height="345">
+        <img src="./images/doodles/sesamestreet.jpg" alt="sesamestreet" width="460" height="345">
       </div>
     
       <div class="item">
-        <img src="./images/mountain.jpeg" alt="mountain" width="460" height="345">
+        <img src="./images/doodles/mountain.jpeg" alt="mountain" width="460" height="345">
       </div>
 
       <div class="item">
-        <img src="./images/river.jpg" alt="river" width="460" height="345">
+        <img src="./images/doodles/river.jpg" alt="river" width="460" height="345">
       </div>
 
       <div class="item">
-        <img src="./images/pacman.png" alt="pacman" width="460" height="345">
+        <img src="./images/doodles/pacman.png" alt="pacman" width="460" height="345">
       </div>
 
       <div class="item">
-        <img src="./images/gitar.jpg" alt="gitar" width="460" height="345">
+        <img src="./images/doodles/gitar.jpg" alt="gitar" width="460" height="345">
       </div>
 
       <div class="item">
-        <img src="./images/JulesVerne.jpg" alt="JulesVerne" width="460" height="345">
+        <img src="./images/doodles/JulesVerne.jpg" alt="JulesVerne" width="460" height="345">
       </div>
 
       <div class="item">
-        <img src="./images/shakespeare.jpg" alt="shakespeare" width="460" height="345">
+        <img src="./images/doodles/shakespeare.jpg" alt="shakespeare" width="460" height="345">
       </div>
     </div>
 

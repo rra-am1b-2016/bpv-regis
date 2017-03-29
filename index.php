@@ -35,6 +35,9 @@
     <!-- Custom styles RRA carrousel -->
     <link href="./css/carrousel.css" rel="stylesheet">
 
+    <!-- Custom styles RRA carrousel -->
+    <link href="./css/bpv_show.css" rel="stylesheet">
+
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="./bootstrap-3.3.7/docs/assets/js/ie-emulation-modes-warning.js"></script>

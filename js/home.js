@@ -1,5 +1,5 @@
 $(document).ready(function () {
-   $("#myCarousel").carousel({"interval": 4500});
+   $("#myCarousel").carousel({"interval": 1500});
 
    
 });

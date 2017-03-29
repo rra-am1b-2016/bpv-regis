@@ -4,7 +4,7 @@
          // Maak contact met mysql-server en database
          include("./connect_db.php");
          // Maak een query die het record behorende bij het meegegeven id selecteerd.
-         $sql = "SELECT * FROM `users` WHERE `id` = ".$_POST["id"];
+         $sql = "SELECT * FROM `users` WHERE `id` = '" . $_POST["id"] . "'";
          // Vuur de query af op de database
          $result = mysqli_query($conn, $sql);
          // Zet de resource om naar een associatief array
@@ -19,7 +19,7 @@
                         // dan updaten we het password veld naar de nieuwe waarde en zetten we activate op true.
                         $sql = "UPDATE `users` SET `password` = '".sha1($_POST["password"])."',
                                                       `activate` = 'true'
-                              WHERE              `id` = ".$_POST["id"].";";
+                              WHERE              `id` = '" . $_POST["id"] . "'";
                         $result = mysqli_query($conn, $sql);
                         if ($result)
                         {

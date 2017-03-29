@@ -42,12 +42,12 @@ body {
 
 .form-bpv input[id="streetName"] {
    display: inline ;
-   width: 456px;
+   width: 446px;
 }
 
 .form-bpv input[id="houseNumber"] {
    display: inline;
-   width: 140px;
+   width: 150px;
 }
 
 .form-bpv input[id="postalcode"] {
@@ -62,25 +62,30 @@ body {
 
 .form-bpv input[id="nameContact"] {
    display: inline;
-   width: 456px;
+   width: 446px;
 }
 
 .form-bpv input[id="mobileContact"] {
    display: inline;
-   width: 140px;
+   width: 150px;
 }
 
 .form-bpv input[id="nameCompany"] {
    display: inline;
-   width: 456px;
+   width: 446px;
 }
 
 .form-bpv input[id="phoneNumberCompany"] {
    display: inline;
-   width: 140px;
+   width: 150px;
 }
 
 .form-bpv div[id="succes_insert"] {
+  display: none;
+  margin-top: 10px;
+}
+
+.form-bpv div[id="duplicate_entry"] {
   display: none;
   margin-top: 10px;
 }

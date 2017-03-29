@@ -10,6 +10,11 @@ $(document).ready(function () {
             setTimeout(function () {
                window.location.href = "index.php?content=home";
             }, 3000);
+         } else if ( xhr.responseText === "duplicate_entry" ) {
+            document.getElementById("duplicate_entry").style.display = "block";
+            setTimeout(function () {
+               window.location.href = "index.php?content=bpv_form";
+            }, 3000);
          }
       }
    } 

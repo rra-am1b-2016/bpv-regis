@@ -4,6 +4,7 @@
       switch ($_SESSION["userrole"]) {
          case "student" :
             echo "<li><a href='./index.php?content=bpv_form'>bpv-bedrijf invoeren</a></li>";
+            echo "<li><a href='./index.php?content=bpv_show'>bpv-bedrijven weergeven</a></li>";
             break;
          case "admin":
             break;
