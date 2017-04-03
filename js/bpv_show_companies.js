@@ -11,15 +11,27 @@ $(document).ready(function () {
          var data = JSON.parse(xhr.responseText);
          //console.log(data);
          var message = data.shift();
+
+         console.log(data);
          // alert(message);
          if ( message == "succes_records_found" ) {
-            var index = [1,5,8,3,4];
+            // Maak een array met alle velden die je wilt weergeven
+            // 1-nameCompany, 5-streetName, 8-City, 3-nameContact, 4-mobileContact, 9-urlCompany
+            var index = [1,5,8,3,4,9];
+            
+            // Zet een handvat op <tbody id="data">
             var table = document.getElementById("data");
-
+            
+            // Doorloop alle opgehaalde records 
             for ( var i=0; i < data.length; i++ ) {
+               // Maak een rij element...
                var tr = document.createElement("tr");
-               for ( var j=0; j < index.length; j++) {               
+
+               // Voor een reocrd doorloop je alle gekozen velden in index 
+               for ( var j=0; j < index.length; j++) {
+                  // Maak een td element...               
                   var td = document.createElement("td"); 
+                  // Maak een tekst voor rij i, 
                   var text = document.createTextNode(data[i][index[j]]);
                   td.appendChild(text);
 
@@ -38,16 +50,21 @@ $(document).ready(function () {
                     var option = document.createElement("option");
                     option.setAttribute("value", t);
                     option.innerHTML = optionInnerHtml[t];
+
+                    if (data[i][13] == t) {
+                        
+                        option.selected = true;
+                    }
                     select.appendChild(option);
                }
                td.appendChild(select);
                tr.appendChild(td);
                table.appendChild(tr);
-            }
-         } else if (message == "error_nothing_found") {
-             //alert( "error_nothing_found");
-             document.getElementById("error_nothing_found").style.display = "block";
-         }
+            }  // einde doorlopen opgehaalde records
+        } else if (message == "error_nothing_found") {
+            //alert( "error_nothing_found");
+            document.getElementById("error_nothing_found").style.display = "block";
+        }
       }
    }
 

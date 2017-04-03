@@ -18,6 +18,7 @@
             <th>Plaats</th>
             <th>Contactpersoon</th>
             <th>Mobile</th>
+            <th>Website</th>
             <th>Status</th>
          </tr>
       </thead>
