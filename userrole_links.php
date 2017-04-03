@@ -5,6 +5,7 @@
          case "student" :
             echo "<li><a href='./index.php?content=bpv_form'>bpv-bedrijf invoeren</a></li>";
             echo "<li><a href='./index.php?content=bpv_show'>bpv-bedrijven weergeven</a></li>";
+            echo "<li><a href='./index.php?content=bpv_show_companies'>ingevoerde bedrijven</a></li>";          
             break;
          case "admin":
             break;
@@ -17,12 +18,8 @@
          default:
             break;
       }
-      echo "<li><a href='./index.php?content=logout'>uitloggen</a></li>";
-      
-      
+      echo "<li><a href='./index.php?content=logout'>uitloggen</a></li>";      
    } else {
       echo "<li><a href='./index.php?content=login_form'>inloggen</a></li>";
       echo "<li><a href='./index.php?content=register'>registreren</a></li>";
-
    }
-?>

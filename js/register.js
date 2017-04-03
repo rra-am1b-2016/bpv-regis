@@ -41,4 +41,6 @@ $(document).ready(function () {
       xmlhttp.send();
       return false;
    }
+
+   $("[data-toggle='tooltip']").tooltip({"html": true, "placement": "right"});
 });

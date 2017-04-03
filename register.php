@@ -2,7 +2,14 @@
 <form class="form-signin">
    <h2 class="form-signin-heading">registreren</h2>
    <label for="inputStdNumber" class="sr-only">Student nummer</label>
-         <input type="text" class="form-control" id="stdnumber" placeholder="studentnummer" autofocus required>
+         <input type="text" 
+                class="form-control" 
+                data-toggle="tooltip"
+                title="<i style='color: pink; font-size: 1.2em'>Studenten:</i> vul je studentnummer in<br><i style='color: pink; font-size: 1.2em'>Docenten: </i> voer je <l></l>ettercode in"
+                id="stdnumber" 
+                placeholder="studentnummer" 
+                autofocus 
+                required>
          <button class="btn btn-lg btn-primary btn-block" id="btn-register">Verstuur</button>
 </form>
 </p>
