@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Machine: 127.0.0.1
--- Gegenereerd op: 03 apr 2017 om 10:37
+-- Gegenereerd op: 05 apr 2017 om 09:51
 -- Serverversie: 5.6.17
 -- PHP-versie: 5.5.12
 
@@ -52,15 +52,15 @@ INSERT INTO `bpv_companies` (`id`, `nameCompany`, `phoneNumberCompany`, `nameCon
 ('1', 'Bissmark', '0251-674209', 'Harry Heens', '31 6 2560 524', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', '123bissmark.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden', '2017-04-03 09:06:41', 5),
 ('1', 'Bissmarktestterderdetes', '0251-674209', 'Harry Heens', '31 6 2560 524', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', 'asdbissmark.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden', '2017-04-03 09:08:57', 2),
 ('1', 'Bissmark', '0251-674209', 'Harry Heens', '31 6 2560 524', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', 'biss12mark.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden', '2017-03-27 10:49:26', 0),
-('1', 'Bissmark                                               kllk', '0251-674209', 'Harry Heens', '31 6 2560 524', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', 'biss21mark.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden', '2017-03-27 10:50:08', 0),
-('1', 'Bissmark', '0251-674209', 'Harry Heens', '31 6 2560 524', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', 'biss546mark.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden', '2017-03-29 09:29:26', 0),
-('1', 'Bissmark', '0251-674209', 'Harry Heens', '31 6 2560 524', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', 'biss67mark.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden', '2017-03-29 08:59:55', 0),
-('1', 'Bissmark', '0251-674209', 'Harry Heens', ' 31 6 2560 52', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', 'bissmark.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden\n        ', '2017-03-27 10:41:24', 0),
-('1', 'Bissmark', '0251-674209', 'Harry Heens', '31 6 2560 524', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', 'bissmark456.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden', '2017-04-03 09:07:34', 0),
-('1', 'Bissmark', '0251-674209', 'Harry Heens', ' 31 6 2560 52', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', 'bissmarks.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden\n        ', '2017-03-27 10:42:56', 0),
-('1', 'Bissmark', '0251-674209', 'Harry Heens', ' 31 6 2560 52', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', 'bizzmark.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden\n        ', '2017-03-27 10:42:20', 0),
-('3', 'Bissmark', '0251-674209', 'Harry Heens', '31 6 2560 524', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', 'bissmark.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden', '2017-03-29 13:34:32', 0),
-('3', 'Bissmark', '0251-674209', 'Harry Heens', '31 6 2560 524', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', 'bissmark1.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden', '2017-03-29 13:35:15', 0),
+('1', 'Bissmark                                               kllk', '0251-674209', 'Harry Heens', '31 6 2560 524', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', 'biss21mark.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden', '2017-03-27 10:50:08', 6),
+('1', 'Bissmark', '0251-674209', 'Harry Heens', '31 6 2560 524', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', 'biss546mark.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden', '2017-03-29 09:29:26', 3),
+('1', 'Bissmark', '0251-674209', 'Harry Heens', '31 6 2560 524', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', 'biss67mark.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden', '2017-03-29 08:59:55', 6),
+('1', 'Bissmark', '0251-674209', 'Harry Heens', ' 31 6 2560 52', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', 'bissmark.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden\n        ', '2017-03-27 10:41:24', 6),
+('1', 'Bissmark', '0251-674209', 'Harry Heens', '31 6 2560 524', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', 'bissmark456.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden', '2017-04-03 09:07:34', 6),
+('1', 'Bissmark', '0251-674209', 'Harry Heens', ' 31 6 2560 52', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', 'bissmarks.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden\n        ', '2017-03-27 10:42:56', 6),
+('1', 'Bissmark', '0251-674209', 'Harry Heens', ' 31 6 2560 52', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', 'bizzmark.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden\n        ', '2017-03-27 10:42:20', 2),
+('3', 'Bissmark', '0251-674209', 'Harry Heens', '31 6 2560 524', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', 'bissmark.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden', '2017-03-29 13:34:32', 6),
+('3', 'Bissmark', '0251-674209', 'Harry Heens', '31 6 2560 524', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', 'bissmark1.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden', '2017-03-29 13:35:15', 2),
 ('4', 'Bissmark', '0251-674209', 'Harry Heens', '31 6 2560 524', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', 'bissamark.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden', '2017-03-27 11:07:09', 0),
 ('4', 'Bissmark', '0251-674209', 'Harry Heens', '31 6 2560 524', 'Vreeswijksestraatweg', '42', '1905 B', 'Oudegein', 'bissmark.nl', 'hheens@bissmark.nl', 'Alle voorkomende werkzaamheden', '2017-03-27 11:03:49', 0);
 
