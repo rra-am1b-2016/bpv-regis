@@ -1,8 +1,10 @@
+var xhr = new XMLHttpRequest();
 $(document).ready(function () {
    
 
-   var xhr = new XMLHttpRequest();
+   
 
+   var select;
 
    xhr.onreadystatechange = function () {
       //alert(xhr.status +  " | "  + xhr.readyState);
@@ -39,6 +41,9 @@ $(document).ready(function () {
                }
                var td = document.createElement("td");
                var select = document.createElement("select");
+               select.addEventListener("change", test, false );
+               select.website = data[i][9];
+               console.log(select);
                var optionInnerHtml =      ["nog geen contact",
                                            "contact gezocht", 
                                            "contact bevestigd bedrijf", 
@@ -68,9 +73,18 @@ $(document).ready(function () {
       }
    }
 
+   
+
    xhr.open("POST", "bpv_show_companies_data.php", true);
    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
    xhr.send();
 
-
 });
+
+function test(evt) {
+       console.log(evt.target.options[evt.target.selectedIndex].value);
+       alert("Naamwebsite: " + evt.target.options[evt.target.selectedIndex].text);
+       xhr.open("POST", "bpv_show_companies_data_update.php", true);
+       xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+       xhr.send("urlCompany=" + evt.target.website);
+}
