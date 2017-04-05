@@ -43,31 +43,12 @@
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <a class="navbar-brand" href="./index.php?content=home">BPV-regis</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="./index.php?content=home">Home</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TO DO<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="./index.php?content=task">wo-22-02-2017</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>_
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
+            <li><a href="./index.php?content=home">Home</a></li>
+        
             <?php 
               ob_start();
               session_start();
@@ -82,6 +63,7 @@
       <?php 
           if (isset($_GET["content"]))
           {
+            $_SESSION["content"] = $_GET["content"];
             include($_GET["content"].".php"); 
           }
           else {
@@ -106,7 +88,7 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./bootstrap-3.3.7/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
     <script src="./js/bpv-regis.js"></script>
-    <script src="./js/links.js"></script>
+    <script src="./js/navigation.js"></script>
     
     <?php include("js-selector.php"); ?>
   </body>
