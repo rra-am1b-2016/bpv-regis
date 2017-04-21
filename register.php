@@ -5,7 +5,7 @@
          <input type="text" 
                 class="form-control" 
                 data-toggle="tooltip"
-                title="<i style='color: pink; font-size: 1.2em'>Studenten:</i> vul je studentnummer in<br><i style='color: pink; font-size: 1.2em'>Docenten: </i> voer je <l></l>ettercode in"
+                title="<i style='color: pink; font-size: 1.2em'>Studenten:</i> vul je studentnummer in<br><i style='color: pink; font-size: 1.2em'>Docenten:</i> voer je lettercode in"
                 id="stdnumber" 
                 placeholder="studentnummer" 
                 autofocus 

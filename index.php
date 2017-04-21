@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <!--<link rel="icon" href="./bootstrap-3.3.7/docs/favicon.ico">-->
+    <link rel="icon" href="./favicon.ico">
     <title>BPV-regis</title>
     <!-- Bootstrap core CSS -->
     <link href="./bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -47,7 +47,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="./index.php?content=home">Home</a></li>
+            <li><a href="./index.php?content=home"><span class="glyphicon glyphicon-home"></span>Home</a></li>
         
             <?php 
               ob_start();

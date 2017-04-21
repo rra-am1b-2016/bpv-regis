@@ -20,13 +20,19 @@
       <li data-target="#myCarousel" data-slide-to="5"></li>
       <li data-target="#myCarousel" data-slide-to="6"></li>
       <li data-target="#myCarousel" data-slide-to="7"></li>
+      <li data-target="#myCarousel" data-slide-to="8"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
+
       <div class="item active">
-        <img src="./images/doodles/bird.jpg" alt="bird" width="460" height="345">
+        <img src="./images/svg/tekening.svg" type="image/svg+xml">
       </div>
+
+      <div class="item">
+        <img src="./images/doodles/bird.jpg" alt="bird" width="460" height="345">
+      </div>      
 
       <div class="item">
         <img src="./images/doodles/sesamestreet.jpg" alt="sesamestreet" width="460" height="345">

@@ -14,12 +14,25 @@
          case "bpvco":
             break;
          case "root":
+            echo "<li><a href='./index.php?content=userrole_change'>userrole change</a></li>";          
             break;
          default:
             break;
       }
-      echo "<li><a href='./index.php?content=logout'>uitloggen</a></li>";      
+      echo "<li><a href='./index.php?content=logout'>
+                  <span class='glyphicon glyphicon-log-in'>
+                  </span>uitloggen
+                  </a>
+            </li>";      
    } else {
-      echo "<li><a href='./index.php?content=login_form'>inloggen</a></li>";
-      echo "<li><a href='./index.php?content=register'>registreren</a></li>";
+      echo "<li><a href='./index.php?content=login_form'>
+                  <span class='glyphicon glyphicon-log-in'>
+                  </span>inloggen
+                </a>
+            </li>";
+      echo "<li><a href='./index.php?content=register'>
+                   <span class='glyphicon glyphicon-user'></span>
+                        registreren
+                </a>
+            </li>";
    }
